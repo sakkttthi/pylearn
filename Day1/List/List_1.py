@@ -52,3 +52,34 @@ del secondList
 
 thisList.clear()
 print(thisList)
+
+# Loop
+thisList = ['apple', 50, 101.25, "banana",'pipeapple']
+for x in thisList:
+    print(x)
+
+for y in range(len(thisList)):
+    print(thisList[y])
+
+i = 0
+while i < len(thisList):
+    print(thisList[i])
+    i = i+1
+
+# List comprehension
+# Syntax: newlist = [expression for item in iterable if condition == True]
+fruit = ['banana', 'mango', 'papaya']
+newlist = [x for x in fruit]
+print(newlist)
+
+nextlist = [x for x in fruit if 'b' in x]
+print(nextlist)
+
+numlist = [x for x in range(50) if x < 10] 
+print(numlist)
+
+upperlist = [x.upper() for x in fruit]
+print(upperlist)
+
+hellolist = ['hello' for x in fruit]
+print(hellolist)
