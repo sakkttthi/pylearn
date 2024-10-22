@@ -1,4 +1,4 @@
-# List is Ordered, Not changable & accepts duplicate
+# List is Ordered, changable & accepts duplicate []
 
 thisList = ['apple', 50, 101.25, "banana",'pipeapple']
 
