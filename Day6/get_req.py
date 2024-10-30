@@ -3,16 +3,22 @@
 
 import requests
 
-url = 'https://reqres.in/api/users?page=2'
-
+url = 'https://reqres.in/api'
+uri = '/users?page=2'
+print(url+uri)
 # Get 
-x = requests.get(url)
+x = requests.get(url+uri)
 print(x.status_code)
 
-y = requests.get(url, params={"id":7})
+assert x.status_code == 200 #to compare & validate the response
+
+id={
+"id":7
+}
+y = requests.get(url+uri, params=id) #to pass parameters
 print(y.text)
 
-z = requests.get(url, timeout=2)
+z = requests.get(url+uri, timeout=2)
 print(z.text)
 
 
